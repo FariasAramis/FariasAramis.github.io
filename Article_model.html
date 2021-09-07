@@ -78,10 +78,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="page-scroll" href="body">Home</a></li>
-                            <li><a class="page-scroll" href="#about-section">About</a></li>
-                            <li><a class="page-scroll" href="#services-section">What I do</a></li>
-                            <li><a class="page-scroll" href="#portfolio-section">Works</a></li>
+                            <li><a class="page-scroll" href="index.html">Home</a></li>
+                            <li><a class="page-scroll" href="index.html#about-section">About</a></li>
+                            <li><a class="page-scroll" href="index.html#services-section">What I do</a></li>
+                            <li><a class="page-scroll" href="index.html#portfolio-section">Works</a></li>
                             <li><a class="page-scroll" href="#contact-section">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -110,48 +110,171 @@
                     <div class="container">
                         <div class="row">
                         
-                            <div class="col-md-9">
-                                <h1>Download Our Pdf</h1>
-                                <p>Inspired by nature, follow technology, appreciate the classics. You can build modern & professional websites with Unika. The possibilities are just endless.</p>
+                            <div class="col-md-8">
+                                <h1>COVID-19 Vaccination Rollout</h1>
+                                <p style="font-size:15px">This project was developed by <a href="https://www.linkedin.com/in/toby--lee"><strong>Toby Lee</strong></a> as a tutoring iniciative from <a href=https://www.linkedin.com/company/dataxp-ai/><strong>Data XP</strong></a>.<br><br>
+                                   The scenario for the project was as follows: a fictional company, QuickJab, was involved in the distributions of vaccines worldwide, but had leeway in selecting the new contries to roll-out.
+                                   In a way to optimize this selection, the company hires a team of analysts to process the data available and suggest what country would be most cost effective for the next roll-out.<br><br>
+                                   The "cost-effectiviness" in itself was an open parameter to be designed by the analyst team, and must incorporate the data submited by Quickjab.
+                                   At the end of the 4 week period, the teams would present their findings in a presentation.<br><br>
+
+                                   Inicially, my team, comprised of 5 people, develop a <a href="https://docs.google.com/spreadsheets/d/1QXuC0b8yaNrYfVkhhaMVFacMDrA-lmeB/edit#gid=1023279185"><strong>tracker tool</strong></a>
+                                    for controling the time spent on the project as well as for billing purposes.
+                                   The company data was explored for correlations and cleaned up throught SQL. Addicional data from the web was inserted, namely HDI, GDP, population and the logistics performance index (LPI) for each country.
+                                   As a team, we develop a machine learning model to predict the daily vaccination rates for new countries. All this data was combined into a score for each nation. 
+                                   After a sensitivite analysis, the final recommendations were presented to the company.
+                                </p>
                             </div>
 
+                            <div class="col-md-4" position="center">
+                                <div class="col-xs-4 col-sm-6">
+                                    <div class="portfolio_fixed_content">
+                                        <img src="img/portfolio/Covid_dataxp.png" position="center" alt="title"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-6">
+                                    <div class="portfolio_fixed_content">
+                                        <img src="img/portfolio/DataXP.png" position="center" alt="title"/>
+                                    </div>
+                                </div>
+                                
+                            </div>
                             
-                            <div class="col-md-9">
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->           
+                </div>
+            </section> 
+
+            <section id="about-section">
+                <!-- Begin rotate box-1 -->
+                <div class="rotate-box-1-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0">
+                                    <span class="rotate-box-icon"><i class="fa fa-flag-checkered"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>GOAL</h4>
+                                        <p style="font-size:15px">Develop a cost efficiency index for new countries to rollout vaccines.</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
+                                    <span class="rotate-box-icon"><i class="fa fa-check"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>RESULTS</h4>
+                                        <p style="font-size:15px">A score was laid out, taking in account a wide range of parameters including among others: HDI, GDP, Population, Distance to the US and the Logistics Performance Index. A Machine Learning model allowed the prediction of expected daily vaccination rate.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
+                                    <span class="rotate-box-icon"><i class="fa fa-diamond"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>HIGHLIGHTS</h4>
+                                        <p style="font-size:15px">Supervision from Senior Data Analysts.<br>Freedom to explore for solutions.<br>International team from 5 different countries.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12">
                                 <div class="cta-btn wow bounceInRight" data-wow-delay="0.4s">
-                                <a class="btn btn-default btn-lg" href="http://www.imransdesign.com/" target="_blank" role="button">Download</a>
-                                <a class="btn btn-default btn-lg" href="http://www.imransdesign.com/" target="_blank" role="button">Download</a>
+                                <a class="btn btn-default btn-lg" href=https://docs.google.com/presentation/d/1egKA5-EpHCaBowRJ5qFCfYEnxsYIMtMSHe2Xy8Tf440/edit#slide=id.p target="_blank" role="button"><span >Presentation </span><i class="fa fa-external-link"></i></span></a>
+                                <a class="btn btn-default btn-lg" href="https://github.com/IanWafer/dataxp_covid_project" target="_blank" role="button">Project Repository </span><i class="fa fa-external-link"></i></span></a>
+                                <a class="btn btn-default btn-lg" href="https://docs.google.com/spreadsheets/d/1QXuC0b8yaNrYfVkhhaMVFacMDrA-lmeB/edit#gid=1023279185" target="_blank" role="button">Tracker Tool </span><i class="fa fa-external-link"></i></span></a>
+                                <br>
+
                                 <h1> </h1>
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 appsDevelopment test">
-                                <div class="portfolio_single_content">
-                                    <img src="img/portfolio/p1.jpg" alt="title"/>
-                                    <div>
-                                        <a href="img/portfolio/p1.jpg" target="_blank">Open Image</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="extra-space-l"></div>
+                            <div class="extra-space-l"></div>
+                            <div class="extra-space-l"></div>
 
-                            <div class="col-xs-12 col-sm-4 appsDevelopment test">
-                                <div class="portfolio_single_content">
-                                    <img src="img/portfolio/p1.jpg" alt="title"/>
-                                    <div>
-                                        <a href="#" target="_blank" >Skull Awesome</a>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->
-                    
                 </div>
             </section>
+            <section id="portfolio-section" class="page bg-style1">
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio">
+                                <!-- Begin page header-->
+                                <div class="page-header-wrapper">
+                                    <div class="container">
+                                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                            <h2>Related Images</h2>
+                                            <div class="devider"></div>
+                                            <p class="subtitle"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End page header-->
+                                <div class="col-xs-6 col-sm-4">
+                                    <div class="portfolio_single_content">
+                                        <img src="img/portfolio/Covid-DataXp/Data Vizards - One Pager.png" alt="title"/>
+                                        <div>
+                                            <a href="img/portfolio/Covid-DataXp/Data Vizards - One Pager.png" target="_blank">Open Image</a>
+                                            <span>Action Plan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    <div class="portfolio_single_content">
+                                        <img src="img/portfolio/Covid-DataXp/covid1.png" alt="title"/>
+                                        <div>
+                                            <a href="img/portfolio/Covid-DataXp/covid1.png" target="_blank">Open Image</a>
+                                            <span>Inicial data</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    <div class="portfolio_single_content">
+                                        <img src="img/portfolio/Covid-DataXp/covid2.png" alt="title"/>
+                                        <div>
+                                            <a href="img/portfolio/Covid-DataXp/covid2.png" target="_blank" >Open Image</a>
+                                            <span>Linear Regression</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> 
+                    </div> <!-- /.row -->
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-6">
+                            <div class="portfolio_single_content">
+                                <img src="img/portfolio/Covid-DataXp/covid3.png" alt="title"/>
+                                <div>
+                                    <a href="img/portfolio/Covid-DataXp/covid3.png" target="_blank" >Open Image</a>
+                                    <span>Final Score Visualization</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-6">
+                            <div class="portfolio_single_content">
+                                <img src="img/portfolio/Covid-DataXp/covid4.png" alt="title"/>
+                                <div>
+                                    <a href="img/portfolio/Covid-DataXp/covid4.png" target="_blank" >Open Image</a>
+                                    <span>Final Score + Sensitivity Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /.container -->
+
+
+            </section>
+
+
+
+                            
         <!-- End cta -->
-
-
-                
-                
             <!-- Begin social section -->
 			<section id="social-section">
             
@@ -180,151 +303,125 @@
                 
                 
                 
-            <!-- Begin contact section -->
+           <!-- Begin contact section -->
 			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-bg.jpg);">
-            <div class="cover"></div>
-            
-                 <!-- Begin page header-->
-                <div class="page-header-wrapper">
-                    <div class="container">
-                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                            <h2>Contacts</h2>
-                            <div class="devider"></div>
-                            <p class="subtitle">All to contact us</p>
+                <div class="cover"></div>
+                
+                     <!-- Begin page header-->
+                    <div class="page-header-wrapper">
+                        <div class="container">
+                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                <h2>Contacts</h2>
+                                <div class="devider"></div>
+                                <p class="subtitle"></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- End page header-->
-                
-                <div class="contact wow bounceInRight" data-wow-delay="0.4s">
-                    <div class="container">
-                    	<div class="row">
-                        
-                            <div class="col-sm-6">
-                                <div class="contact-info">
-                                    <h4>Our Address</h4>
-                                    <ul class="contact-address">
-			                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; 100 Limpbiscayne Blvd. (North) 17st Floor ,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New World Tower New York ,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New York, USA, 33148</li>
-			                            <li><i class="fa fa-phone"></i>&nbsp; 1 -234 -456 -7890</li>
-			                            <li><i class="fa fa-print"></i>&nbsp; 1 -234 -456 -7890</li>
-			                            <li><i class="fa fa-envelope"></i> info@yourdomain.com</li>
-			                            <li><i class="fa fa-skype"></i> Unika-Design</li>
-			                        </ul>
-                                </div>
-                            </div>
-                        
-                        	<div class="col-sm-6">
-                                <div class="contact-form">
-                                	<h4>Write to us</h4>
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control input-lg" placeholder="Your Name" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control input-lg" placeholder="E-mail" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control input-lg" placeholder="Subject" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
-                                        </div>
-                                        <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
-                                    </form>
-                                </div>	
-                            </div>
-                                                                                
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container -->
-                </div>
-            </section>
-            <!-- End contact section -->
-                
-                
-
-                
-            <!-- Begin footer -->
-            <footer class="text-off-white">
-            
-                <div class="footer-top">
-                	<div class="container">
-                    	<div class="row wow bounceInLeft" data-wow-delay="0.4s">
-
-                            <div class="col-sm-6 col-md-4">
-                            	<h4>Useful Links</h4>
-                                <ul class="imp-links">
-                                	<li><a href="">About</a></li>
-                                	<li><a href="">Services</a></li>
-                                	<li><a href="">Press</a></li>
-                                	<li><a href="">Copyright</a></li>
-                                	<li><a href="">Advertise</a></li>
-                                	<li><a href="">Legal</a></li>
-                                </ul>
-                            </div>
-                        
-                        	<div class="col-sm-6 col-md-4">
-                                <h4>Subscribe</h4>
-                            	<div id="footer_signup">
-                                    <div id="email">
-                                        <form id="subscribe" method="POST">
-                                            <input type="text" placeholder="Enter email address" name="email" id="address" data-validate="validate(required, email)"/>
-                                            <button type="submit">Submit</button>
-                                            <span id="result" class="section-description"></span>
-                                        </form> 
-                                    </div>
-                                </div> 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                                <h4>Recent Tweets</h4>
-                                <div class="single-tweet">
-                                    <div class="tweet-content"><span>@Unika</span> Excepteur sint occaecat cupidatat non proident</div>
-                                    <div class="tweet-date">1 Hour ago</div>
-                                </div>
-                                <div class="single-tweet">
-                                    <div class="tweet-content"><span>@Unika</span> Excepteur sint occaecat cupidatat non proident uku shumaru</div>
-                                    <div class="tweet-date">1 Hour ago</div>
-                                </div>
-                            </div>
+                    <!-- End page header-->
+                    
+                    <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+                        <div class="container">
+                            <div class="row">
                             
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container -->
-                </div>
-                
-                <div class="footer">
-                    <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
-                        <p class="copyright">Copyright &copy; 2015 - Designed By <a href="https://www.behance.net/poljakova" class="theme-author">Veronika Poljakova</a> &amp; Developed by <a href="http://www.imransdesign.com/" class="theme-author">Imransdesign</a></p>
+                                <div class="col-sm-6">
+                                    <div class="contact-info">
+                                        <h4>Location</h4>
+                                        <ul class="contact-address">
+                                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp;Recife,Brazil </li>
+                                            <li><i class="fa fa-phone"></i>&nbsp; +55 89 9 9464-0354</li>
+                                            <li><i class="fa fa-envelope"></i> fariasaramis@gmail.com</li>
+                                            <li><i class="fa fa-skype"></i> aramisfa</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+    
+                                                                                    
+                            </div> <!-- /.row -->
+                        </div> <!-- /.container -->
                     </div>
-                </div>
-
-            </footer>
-            <!-- End footer -->
-
-            <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
-                                              
-        </div><!-- body ends -->
-        
-        
-        
-        
-        <!-- Plugins JS -->
-		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
-		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
-		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
-		<script src="inc/stellar/js/jquery.stellar.min.js"></script>
-		<script src="inc/animations/js/wow.min.js"></script>
-        <script src="inc/waypoints.min.js"></script>
-		<script src="inc/isotope.pkgd.min.js"></script>
-		<script src="inc/classie.js"></script>
-		<script src="inc/jquery.easing.min.js"></script>
-		<script src="inc/jquery.counterup.min.js"></script>
-		<script src="inc/smoothscroll.js"></script>
-
-		<!-- Theme JS -->
-		<script src="js/theme.js"></script>
-
-    </body> 
-        
+                </section>
+                <!-- End contact section -->
+                    
+                    
+    
+                    
+                <footer class="text-off-white">
             
-</html>
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row wow bounceInLeft" data-wow-delay="0.4s"><!--
+                                <div class="col-sm-6 col-md-4">
+                                    <h4>Useful Links</h4>
+                                    <ul class="imp-links">
+                                        <li><a href="">About</a></li>
+                                        <li><a href="">Services</a></li>
+                                        <li><a href="">Press</a></li>
+                                        <li><a href="">Copyright</a></li>
+                                        <li><a href="">Advertise</a></li>
+                                        <li><a href="">Legal</a></li>
+                                    </ul>
+                                </div>-->      
+      
+                                <div class="col-sm-4 col-md-30">
+                                    <script type="text/javascript" src="https://www.counters-free.net/count/9b70"></script><br>
+                                    <script type="text/javascript" src="https://www.counters-free.net/count/9b70"></script><br>
+                                    <a  type="hidden" href='https://drweiglundpartner.de/'><FONT COLOR="#363940">Dr.Weigl&Partner</FONT></a> 
+                                    <script type='text/javascript'>
+                                    function trimTrailingSlash(string){if(string!=null){return string.replace(/\/+$/,'');}else{return string;}}
+                                        if(!String.prototype.trim){String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g,'');};}
+                                        ctrHref=trimTrailingSlash('https://drweiglundpartner.de/'.trim());ctrHref2=trimTrailingSlash('https://drweiglundpartner.de/'.trim());eInDoc=function(e){while(e=e.parentNode){if(e==document){return true;}}
+                                        return false;};lCheck=function(l){if(null!=l&&null!=l.getAttribute('href')&&(ctrHref===''||trimTrailingSlash(l.getAttribute('href').trim())==ctrHref||trimTrailingSlash(l.href.trim())==ctrHref||trimTrailingSlash(l.getAttribute('href').trim())==ctrHref2||trimTrailingSlash(l.href.trim())==ctrHref2)){return true;}
+                                        else{return false;}};linkfound=false;window.onload=function(){els=document.getElementsByTagName('a');l=els.length;for(i=0;i<l;i++){el=els[i];if(trimTrailingSlash(el.href)===ctrHref||trimTrailingSlash(el.getAttribute('href'))===ctrHref||trimTrailingSlash(el.href)===ctrHref2||trimTrailingSlash(el.getAttribute('href'))===ctrHref2){linkfound=true;if(el.getAttribute('rel')=='nofollow'||!eInDoc(el)||!lCheck(el)){linkfound=false;}
+                                        linktext=el.innerHTML;if(linktext==undefined){linkfound=false;}
+                                        else if(linktext.trim()==''){linkfound=false;}
+                                        if(el.offsetHeight!=undefined&&el.offsetHeight<8){linkfound=false;}
+                                        if(linktext!='Dr.Weigl&Partner'){linkfound=false;}
+                                        break;}}
+                                        if(linkfound){linkToHide=el;linkToHide.innerHTML='';}
+                                        if(linkfound==false){var div=document.createElement('div');div.id='error_111b6873dd9bcc4296761f3ca392d528e83854b4';div.innerHTML='<a href="http://besucherzaehler.co/?id=111b6873dd9bcc4296761f3ca392d528e83854b4"><FONT COLOR="#363940">BesucherzÃ¤hler Fehler: Code nicht Ã¤ndern. Hier klicken, um den neue Code zu generieren!</FONT></a>';if(document.getElementById('besucherzaehler2')!=null){document.getElementById('besucherzaehler2').parentNode.insertBefore(div,document.getElementById('besucherzaehler2').nextSibling);}else{document.body.appendChild(div);}
+                                        widget=document.getElementById('besucherzaehler2');if(widget){widget.style.visibility='hidden';}}}
+                                        </script>
+                                
+                                </div>
+    
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="footer">
+                        <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
+                            <p class="copyright">Copyright &copy; 2015 - Designed By <a href="https://www.behance.net/poljakova" class="theme-author">Veronika Poljakova</a> &amp; Developed by <a href="http://www.imransdesign.com/" class="theme-author">Imransdesign</a></p>
+                        </div>
+                    </div>
+    
+                </footer>
+                <!-- End footer -->
+    
+                <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+                                                  
+            </div><!-- body ends -->
+            
+            
+            
+            
+            <!-- Plugins JS -->
+            <script src="inc/jquery/jquery-1.11.1.min.js"></script>
+            <script src="inc/bootstrap/js/bootstrap.min.js"></script>
+            <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+            <script src="inc/stellar/js/jquery.stellar.min.js"></script>
+            <script src="inc/animations/js/wow.min.js"></script>
+            <script src="inc/waypoints.min.js"></script>
+            <script src="inc/isotope.pkgd.min.js"></script>
+            <script src="inc/classie.js"></script>
+            <script src="inc/jquery.easing.min.js"></script>
+            <script src="inc/jquery.counterup.min.js"></script>
+            <script src="inc/smoothscroll.js"></script>
+    
+            <!-- Theme JS -->
+            <script src="js/theme.js"></script>
+    
+        </body> 
+            
+                
+    </html>
