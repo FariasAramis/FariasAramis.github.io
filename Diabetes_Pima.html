@@ -58,39 +58,16 @@
     	<div class="body">
         
             <!--========== BEGIN HEADER ==========-->
-            <header id="header" class="header-main">
+            <div id="header-placeholder"></div>
 
-                <!-- Begin Navbar -->
-                <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
-
-                  <div class="container">
-
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand page-scroll" href="index.html">Unika</a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class="page-scroll" href="index.html">Home</a></li>
-                            <li><a class="page-scroll" href="index.html#about-section">About</a></li>
-                            <li><a class="page-scroll" href="index.html#services-section">What I do</a></li>
-                            <li><a class="page-scroll" href="index.html#portfolio-section">Works</a></li>
-                            <li><a class="page-scroll" href="#contact-section">Contact</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                  </div><!-- /.container -->
-                </nav>
-                <!-- End Navbar -->
-
-            </header>
+            <script>
+                // Load the header
+                fetch('header.html')
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                  });
+            </script>
             <!-- ========= END HEADER =========-->
             
             <section id="fake">
@@ -290,74 +267,31 @@
 
                             
         <!-- End cta -->
-            <!-- Begin social section -->
-			<section id="social-section">
-            
-                <!-- Begin page header-->
-               <div class="page-header-wrapper">
-                   <div class="container">
-                       <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                           <h2>Social Network</h2>
-                           <div class="devider"></div>
-                           <p class="subtitle">Check it out</p>
-                       </div>
-                   </div>
-               </div>
-               <!-- End page header-->
-               
-               <div class="container">
-                   <ul class="social-list">
-                       <li> <a href="https://github.com/FariasAramis" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span class="rotate-box-icon"><i class="fa fa-github"></i></span></a></li>
-                       <li> <a href="https://www.linkedin.com/in/fariasaramis/" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span class="rotate-box-icon"><i class="fa fa-linkedin"></i></span></a></li>
-                   </ul>
-               </div>
-               
-           </section>
-           <!-- End social section -->
-                
-                
-                
-                
-           <!-- Begin contact section -->
-			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-bg.jpg);">
-                <div class="cover"></div>
-                
-                     <!-- Begin page header-->
-                    <div class="page-header-wrapper">
-                        <div class="container">
-                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                                <h2>Contacts</h2>
-                                <div class="devider"></div>
-                                <p class="subtitle"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End page header-->
-                    
-                    <div class="contact wow bounceInRight" data-wow-delay="0.4s">
-                        <div class="container">
-                            <div class="row">
-                            
-                                <div class="col-sm-6">
-                                    <div class="contact-info">
-                                        <h4>Location</h4>
-                                        <ul class="contact-address">
-                                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp;Recife,Brazil </li>
-                                            <li><i class="fa fa-phone"></i>&nbsp; +55 89 9 9464-0354</li>
-                                            <li><i class="fa fa-envelope"></i> fariasaramis@gmail.com</li>
-                                            <li><i class="fa fa-skype"></i> aramisfa</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            
-    
-                                                                                    
-                            </div> <!-- /.row -->
-                        </div> <!-- /.container -->
-                    </div>
-                </section>
-                <!-- End contact section -->
-                    
+             <!-- Begin social section -->
+             <div id="social_section_placeholder"></div>
+
+             <script>
+                 // Load the header
+                 fetch('social_section.html')
+                   .then(response => response.text())
+                   .then(data => {
+                     document.getElementById('social_section_placeholder').innerHTML = data;
+                   });
+             </script>
+             <!-- End social section -->
+                 
+             <!-- Begin contact section -->
+             <div id="contact_section_placeholder"></div>
+ 
+             <script>
+                 // Load the header
+                 fetch('contact_section.html')
+                   .then(response => response.text())
+                   .then(data => {
+                     document.getElementById('contact_section_placeholder').innerHTML = data;
+                   });
+             </script>
+             <!-- End contact section -->                        
                     
     
                     
