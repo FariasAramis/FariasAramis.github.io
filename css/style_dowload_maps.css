@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  h1 {
+    margin: 10px 0;
+  }
+  
+  #map {
+    height: 90vh;
+    width: 100%;
+  }
+  
+  .download-label {
+    background-color: rgba(255, 255, 255, 0.3);  /* Semi-transparent background */
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);  /* Add a shadow for better visibility */
+  }
+  
